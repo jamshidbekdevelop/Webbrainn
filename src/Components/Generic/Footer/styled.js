@@ -7,7 +7,7 @@ margin-top: 112px;
 border-top: 1px solid black;
 border-bottom: 1px solid black;
 width: 100%;
-height: 320px;
+height: auto;
 `
 export const End=styled.div`
 width: 100%;
@@ -22,6 +22,8 @@ export const Container =styled.div`
 display: flex;
 justify-content: space-between;
 margin-top: 40px;
+margin-bottom: 20px;
+flex-wrap: wrap;
 `
 export const Div=styled.div`
 width: 140px;

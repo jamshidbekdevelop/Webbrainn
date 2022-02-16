@@ -4,6 +4,7 @@ export const Container =styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
+min-width: 120px;
 width: ${({width})=> (width ?`${width}px` : '120px')};
 height: ${({height})=>(height ?`${height}px` : '50px')};
 color: ${({border})=>(border ?'var(--colorBlue)' : 'white')};

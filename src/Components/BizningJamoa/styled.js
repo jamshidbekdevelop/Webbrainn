@@ -15,8 +15,9 @@ export const Cont =styled.div`
 display: flex;
 justify-content: space-between;
 width: 100%;
-height: 1450px;
+height: 1200px;
 flex-wrap: wrap;
+background-color: red;
 margin-top: 100px;
 `
 export const Box = styled.div`
@@ -26,7 +27,7 @@ justify-content: center;
 padding: 50px;
 width: 360px;
 height: 480px;
-/* background-color: rebeccapurple; */
+background-color: rebeccapurple;
 margin-bottom: 30px;
 align-items: center;
 :hover{
@@ -51,7 +52,7 @@ font-family: Fira Code;
 text-align: center;
 font-style: normal;
 font-weight: 500;
-font-size: 79px;
+font-size: 4vw;
 line-height: 88px;
 letter-spacing: -0.08em;
 margin-left: ${({margin})=>`${margin && '100px'}`};
@@ -76,7 +77,7 @@ justify-content: center;
 width: 150px;
 height: 150px;
 border-radius: 50%;
-background-color: yellow;
+/* background-color: yellow; */
 `
 export const Soha = styled.h2`
 font-family: Inter;
@@ -85,4 +86,12 @@ font-weight: normal;
 font-size: 17.5px;
 line-height: 28px;
 color: var(--colorBlue);
+`
+export const Main =styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+`
+Main.M=styled.div`
+width: 83%;
 `

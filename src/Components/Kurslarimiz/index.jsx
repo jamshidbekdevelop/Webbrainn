@@ -1,12 +1,14 @@
 import React from 'react';
-import { Cont, Container, Text } from './styled';
+import { Cont, Container, Main, Text } from './styled';
 import Footer from '../Generic/Footer'
 import Kurslarimiz from '../Generic/Kurslarimiz'
 // import { useLocation } from 'react-router-dom';
 export const Kurslar = () => {
     // const location = useLocation()
   return (
-    <React.Fragment >
+      <Main>
+
+    <Main.M>
 
       <Container>
         <Text >
@@ -16,13 +18,11 @@ export const Kurslar = () => {
         </Text>
       </Container>
       <Cont>
-      <Kurslarimiz/>
+      <Kurslarimiz/><Kurslarimiz/>
       </Cont>
-      <Cont>
-      <Kurslarimiz/>
-      </Cont>
+     </Main.M>
       <Footer/>
-    </React.Fragment>
+      </Main>
   )
 };
 export default Kurslar

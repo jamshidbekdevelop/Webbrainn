@@ -1,17 +1,19 @@
 import React from 'react';
-import { Box, Container, Div, Icon, Img, Size, St, Title ,Text, Boxs, I, Ii, Ii1, Soha, Youtube, Facebook, Instagram, Github, Sertifikat, Texting, Border, TExt, Border1, Border2, Border3, Border4} from './styled';
+import { Box, Container, Div, Icon, Img, Size, St, Title ,Text, Boxs, I, Soha, Youtube, Facebook, Instagram, Github, Sertifikat, Texting, Border, TExt, Border1, Border2, Border3, Border4} from './styled';
 import { Static } from '../../utils/static';
-import { Kurs, Bepul, Jamoa } from '../../utils/kurslar';
+import { Bepul, Jamoa } from '../../utils/kurslar';
 import Button from '../Generic/Button';
 import { useConnectionsContext } from '../../Context';
+import b from '../../assets/img/b1.png'
+import b1 from '../../assets/img/b2.png'
 import Footer from '../Generic/Footer';
 import Kurslarimiz from '../Generic/Kurslarimiz';
 export const Statistic = () => {
   const [{openState}]= useConnectionsContext()
 
   return (
-
-      <Container>
+<React.Fragment>
+    <Container basic>
       <St>Statistika</St>
       <Div>
           {
@@ -32,16 +34,16 @@ export const Statistic = () => {
             <Border/>
             <Texting>85 % bitiruvchilar hozir ishlashyapti, sizda nima gaplar</Texting>
       </Div>}
-      <St top>Biz Haqimizda</St>
+       <St top>Biz Haqimizda</St>
       <Container flex>
 
       <Container img>
       <Img top>
-          <Ii/>
+          <img style={{'border-radius': '30px'}} width={'100%'} height={'100%'} src={b} alt="" />
       </Img>
-      <Img><Ii1/></Img>
+      <Img><img style={{'border-radius': '30px'}} width={'100%'} height={'100%'} src={b1} alt="" /></Img>
       </Container>
-      <Container width={'482'} height={'256'}>
+      <Container  width={'450'} height={'256'}>
           {openState==true&&
           <Div.K>
          <Border1/>
@@ -72,18 +74,19 @@ export const Statistic = () => {
           <TExt top>to’g’ri o’qidiz, tep-tekin kursalarimizam bor yesli cho’</TExt>
       </Div.L>}
       </St>
-      <Container width={'360'} height={'500'} flexx>
+
+        <Container flexx>
          {
              Bepul.map(({id, img, title, def})=>
-                <Boxs width={'380'} height={'470'} key={id}>
+             <Boxs width={'310'} height={'450'} key={id}>
                     <I bos> <img width={'100%'} height={'100%'} src={img} alt="" /> </I>
                     <Text big>{title}</Text>
                     <Text bog>{def}</Text>
                     <Button width={'195'} border>Kirish</Button>
                 </Boxs>
              )
-         }
-      </Container>
+            }
+        </Container>
       <St topp>Bizning Jamoa
       {openState==true&&
       <Div.L>
@@ -95,7 +98,7 @@ agar ishanmaselar tizza bo’yi suvda turaslar aytippoye</TExt>
       <Container flexx>
          {
              Jamoa.map(({id, img, soha, title, def, facebook, instagram, youtube, github})=>
-                <Boxs  width={'360'} height={'400'} key={id}>
+                <Boxs  width={'310'} height={'400'} key={id}>
                     <I> <img width={'100%'} height={'100%'} src={img} alt="" /> </I>
                     <Text big>{title}</Text>
                     <Soha>{soha}</Soha>
@@ -111,9 +114,9 @@ agar ishanmaselar tizza bo’yi suvda turaslar aytippoye</TExt>
          }
       </Container>
       <St topp>Sertifikat</St>
-      <Container flex>
+        <Container flex>
           <Sertifikat/>
-          <Container width={482} Ja Ka>
+          <Container width={450} Ja >
               <Text big>+200 o’quvchilar bizga ishonishgan</Text>
               <Text bog>Kursni tamomlagan talabalarning o’zlashtirish ko’rsatkichi e’tiborga olingan holda sertifikatlar beriladi.</Text>
              {openState===true &&
@@ -125,10 +128,11 @@ agar ishanmaselar tizza bo’yi suvda turaslar aytippoye</TExt>
                     Tugadi</Text.Tex>
               </Div.S>}
           </Container>
-        </Container>
-        <Footer/>
+        </Container> 
 
   </Container>
+        <Footer/>
+  </React.Fragment>
 
     )
 };

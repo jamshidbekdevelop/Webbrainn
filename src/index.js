@@ -6,6 +6,7 @@ import { ConnectionsProvider } from './Context';
 import './index.css';
 import Root from './root'
 ReactDOM.render(
+  
   <React.StrictMode>
     {/* <Context> */}
     <ConnectionsProvider>

@@ -203,3 +203,4 @@ export const natijalar =[
         def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
     },
 ]
+export default natijalar;

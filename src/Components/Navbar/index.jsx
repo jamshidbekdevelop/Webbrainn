@@ -1,16 +1,12 @@
 import React  from 'react';
-import {Link, Container, Wrapper, Text, Buttoon} from './styled'
+import {Link, Container, Wrapper, Text, Buttoon, ReactT} from './styled'
 import { Outlet, useLocation } from 'react-router-dom';
-// useConnectionsContext
-// NavbarContext
 import {navbar} from '../../utils/navbar'
 import BrandName from '../Generic/BrandName'
 import Button from '../Generic/Button'
 import Taggle from '../Toggle'
 import { useConnectionsContext } from '../../Context';
-// import { NavbarContext } from '../../Context/styled';
 export const Navbar = () => {
-  // const [state , setState ] = useContext(NavbarContext)
     const [{openState}, dispatch]=useConnectionsContext()
     const location = useLocation()
     const onClose=()=>{
@@ -18,29 +14,24 @@ export const Navbar = () => {
         type: 'ChangePage', payload: !openState
       })
     }
-    // const onClick=(pathname)=>{
-    //   // console.log(hidden , 'hi');
-    //   // console.log(id, 'id');
-    //   console.log(pathname, 'sljkdkf');
-    // }
   return (
-    <React.Fragment >
+    <React.Fragment>
     <Container>
       <BrandName/> 
-      <Wrapper>
+      <Wrapper  width={'500'}>
       {
         navbar.map(({id, pathname, title, hidden})=> !hidden &&(
           <Link active={location?.pathname===pathname} key={id} to={pathname}>{title}</Link>
         ))
       }
     </Wrapper>
-    <Wrapper>
-      {
+    <Wrapper width={'130'}>
+      {/* {
         openState===true ? <Text kerak>Qiziqarli sayohat</Text> : <Text>Qiziqarli sayohat</Text>
       }
     <Buttoon onClick={onClose}>
     <Taggle /> 
-    </Buttoon>
+    </Buttoon> */}
     <Button border >
       Kirish
     </Button>

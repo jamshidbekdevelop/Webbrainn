@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container =styled.div`
 display: flex;
-/* gap: 150px; */
 align-items: center;
+flex-wrap: wrap;
 justify-content: space-between;
 `
 export const Boxs=styled.div`
@@ -11,11 +11,10 @@ box-sizing: border-box;
 padding: 30px;
 display: flex;
 flex-direction: column;
-/* justify-content: center; */
 align-items: center;
-width: 482px;
-/* height: 436px; */
-width: ${({width})=> (width ? `${width}px` : '482px')};
+min-width: 230px;
+max-width: 400px;
+width: ${({width})=> (width ? `${width}px` : '400px')};
 height: ${({height})=> (height ? `${height}px` : '436px')};
 
 :hover{

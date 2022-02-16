@@ -1,10 +1,11 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { navbar} from '../utils/navbar'
+import { navbar } from '../utils/navbar'
 import { Box, Container } from './styled';
 import Navbar from '../Components/Navbar'
 // import Main from '../Components/Main';
 export const Root = () => {
+  // active=true
   return(
   <Container>
     <Routes>

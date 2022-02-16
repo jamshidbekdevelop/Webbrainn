@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Cont, Container, I, Soha, TexT, Text } from './styled';
+import { Box, Cont, Container, I, Main, Soha, TexT, Text } from './styled';
 import Footer from '../Generic/Footer'
 import { natijalar } from '../../utils/kurslar';
 import { Facebook } from './styled';
@@ -10,6 +10,8 @@ import { Github } from './styled';
 export const Natijalar = () => {
   return (
     <React.Fragment >
+      <Main>
+      <Main.M>
 
       <Container>
         <Text >
@@ -21,7 +23,7 @@ export const Natijalar = () => {
       <Cont>
         { 
              natijalar.map(({id, img, soha, title, def, facebook, instagram, youtube, github})=>
-                <Box key={id}>
+             <Box key={id}>
                   <I><img width={'100%'} height={'100%'} src={img} alt="" /></I>
                   <TexT big>{title}</TexT>
                   <Soha>{soha}</Soha>
@@ -34,9 +36,11 @@ export const Natijalar = () => {
                   </Container> 
                 </Box>
              )
-         }   
+            }   
       </Cont>
+      </Main.M>
       <Footer/>
+      </Main>
     </React.Fragment>
   )
 };

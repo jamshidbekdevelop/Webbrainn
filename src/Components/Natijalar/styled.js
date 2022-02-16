@@ -16,7 +16,7 @@ export const Cont =styled.div`
 display: flex;
 justify-content: space-between;
 width: 100%;
-height: 1450px;
+height: auto;
 flex-wrap: wrap;
 margin-top: 100px;
 `
@@ -25,9 +25,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 padding: 50px;
-width: 360px;
+min-width: 270px;
+max-width: 300px;
 height: 480px;
-/* background-color: rebeccapurple; */
 margin-bottom: 30px;
 align-items: center;
 :hover{
@@ -52,7 +52,7 @@ font-family: Fira Code;
 text-align: center;
 font-style: normal;
 font-weight: 500;
-font-size: 79px;
+font-size: 4vw;
 line-height: 88px;
 letter-spacing: -0.08em;
 color: ${({blue})=>`var(${blue? '--colorBlue': '--colorBlack'})`};
@@ -85,4 +85,12 @@ font-weight: normal;
 font-size: 17.5px;
 line-height: 28px;
 color: var(--colorBlue);
+`
+export const Main =styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+`
+Main.M=styled.div`
+width: 83%;
 `

@@ -1,32 +1,35 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+
 export const Container =styled.div`
+box-sizing: border-box;
 position: fixed;
-/* margin-top: 0px; */
-width: 100%;
-/* margin-bottom: 40px; */
+width: 100%; 
 height: 70px;
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around ;
 background-color: white;
-/* background-color: red; */
 `
 export const Link =styled(NavLink)`
 font-family: Inter;
+display: flex;
+flex-wrap: nowrap;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-margin-left: 50px;
 line-height: 26px;
 color: ${({active})=>`var(${active?'--colorBlue' : '--colorBlack'  })`};
 text-decoration: none;
-
 `
 export const Wrapper =styled.div`
 display: flex;
+/* flex-wrap: nowrap; */
+width: ${({width})=> (width ? `${width}px` : 'auto')};
+justify-content: space-between;
 align-items: center;
-gap: 30px;
+/* background-color: red; */
+
 `
 export const Text = styled.div`
 font-family: Inter;
@@ -36,6 +39,7 @@ font-size: 16px;
 line-height: 26px;
 color: ${({kerak})=>`var(${kerak ? '--colorBlue' : '--colorBlack'  })`};
 margin-right: 8px;
+width: 150px;
 `
 export const Buttoon =styled.button`
 width: 5px;
