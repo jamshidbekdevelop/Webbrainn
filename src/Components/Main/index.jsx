@@ -6,11 +6,9 @@ import img1 from '../../assets/img/c.png'
 import img2 from '../../assets/img/a.png'
 import img3 from '../../assets/img/b.png'
 
-// import Toggle from '../Toggle'
-// useConnectionsContext
-import { B, Basic,Blue, Border, Buton, Container, D, Div, IMg, Img1, Img2, Img3, Text } from './styled';
+import { B, Basic,Blue, Border, Buton, Container, D, Div, IMg, Text } from './styled';
 export const Main = () => {
-  
+  console.log('snkjsn');
   const [{openState}]= useConnectionsContext()
   return (
     <B>
@@ -20,14 +18,13 @@ export const Main = () => {
           <Blue>Eng kuchli</Blue> va 
           zamonaviy o'qitish uslubida 
          ta'lim beruvchi <Blue>markaz</Blue>
-         {/* {openState===true&& */}
       <Container flex>
         <Container.But> 
           <Buton>
       
-            <Button width={'230'} border>
+            <a style={{'textDecoration': 'none'}} href="/kurslarimiz"><Button width={'230'} border>
               Kurslarimiz
-            </Button> 
+            </Button> </a>
             <Button width={'230'} border>
               Aloqa
             </Button>
@@ -45,9 +42,9 @@ export const Main = () => {
       </Container>
       </Div>
       <D>
-        <IMg>  <img style={{'border-radius': '30px'}} width={'100%'} height={'100%'} src={img1} alt="" /></IMg>
-        <IMg buttom> <img style={{'border-radius': '30px'}} width={'100%'} height={'100%'} src={img2} alt="" /> </IMg>
-        <IMg> <img style={{'border-radius': '30px'}} width={'100%'} height={'100%'} src={img3} alt="" /> </IMg>
+        <IMg>  <img style={{'borderRadius': '30px'}} width={'100%'} height={'100%'} src={img1} alt="" /></IMg>
+        <IMg buttom> <img style={{'borderRadius': '30px'}} width={'100%'} height={'100%'} src={img2} alt="" /> </IMg>
+        <IMg> <img style={{'borderRadius': '30px'}} width={'100%'} height={'100%'} src={img3} alt="" /> </IMg>
       </D>
       </Basic>
       <Statistic/>

@@ -7,6 +7,7 @@ margin: 0px 30px 0px 8px;
 export const Checkbox=styled.input.attrs({type: 'checkbox'})`
     position: relative;
     width: 40px;
+    cursor: pointer;
     height: 20px;
     -webkit-appearance: none;
     background: #c6c6c6;
@@ -35,7 +36,6 @@ export const Checkbox=styled.input.attrs({type: 'checkbox'})`
 }
 `
 export const Text = styled.div`
-/* font-family: Inter; */
 font-style: normal;
 font-weight: 500;
 font-size: 16px;

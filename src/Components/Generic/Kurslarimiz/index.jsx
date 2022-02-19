@@ -2,9 +2,7 @@ import React from 'react';
 import { Kurs } from '../../../utils/kurslar';
 import Button from '../Button';
 import { Container, Boxs, I, Text, } from './styled';
-// import { useLocation } from 'react-router-dom';
 export const Kurslarimiz = () => {
-    // const location = useLocation()
   return(
     <Container flexx>
          {

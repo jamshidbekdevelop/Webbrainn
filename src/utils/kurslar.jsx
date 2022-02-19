@@ -7,7 +7,6 @@ import bepul3 from '../assets/img/dars3.png'
 import web1 from '../assets/img/web1.png'
 import web2 from '../assets/img/rab2.png'
 import web3 from '../assets/img/rab3.png'
-import web4 from '../assets/img/web4.jpg'
 
 export const Kurs=[
     {id:1, img: mob, title: 'Mobile Bootcamp', def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'},
@@ -25,6 +24,7 @@ export const Bepul =[
 export const Jamoa =[
     {
         id:1,
+        hidden: 'true',
         img: web1,
         facebook: 'https://www.facebook.com/webbrainacademy/',
         instagram: 'https://www.instagram.com/webbrain_academy/?hl=en',
@@ -36,6 +36,7 @@ export const Jamoa =[
     },
     {
         id:2,
+        hidden: 'true',
         img: web2,
         facebook: 'https://www.facebook.com/webbrainacademy/',
         instagram: 'https://www.instagram.com/webbrain_academy/?hl=en',
@@ -48,6 +49,7 @@ export const Jamoa =[
     {
         id:3,
         img: web3,
+        hidden: 'true',
         facebook: 'https://www.facebook.com/webbrainacademy/',
         instagram: 'https://www.instagram.com/webbrain_academy/?hl=en',
         youtube: 'https://www.youtube.com/c/WebBrainAcademy', 
@@ -59,6 +61,7 @@ export const Jamoa =[
     {
         id:4,
         img: web1,
+        hidden: 'false',
         facebook: 'https://www.facebook.com/webbrainacademy/',
         instagram: 'https://www.instagram.com/webbrain_academy/?hl=en',
         youtube: 'https://www.youtube.com/c/WebBrainAcademy', 

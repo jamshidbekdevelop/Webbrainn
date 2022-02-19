@@ -1,26 +1,24 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { navbar } from '../utils/navbar'
-import { Box, Container } from './styled';
+import { Container } from './styled';
 import Navbar from '../Components/Navbar'
-// import Main from '../Components/Main';
+import Krish from '../Components/Krish';
+import Royhat from '../Components/Royhat';
 export const Root = () => {
-  // active=true
   return(
   <Container>
     <Routes>
-    {/* <Box sticky> */}
     <Route element={<Navbar/>}>
-    {navbar.map(({id, Element, pathname})=> 
+    {navbar.map(({id, Element, pathname, hidden})=> !hidden &&(
     <Route key={id} path={pathname} element={<Element/>} />
-    )}
+    ))} 
     </Route>
-    {/* </Box> */}
     <Route path='*' element={<h1>Not Found</h1>} />
     <Route path='/' element={<h1><Navigate to={'./asosiy'}/></h1>} />
-    {/* <Route path='/asosiy' element={Main}/> */}
+    <Route path='/signup' element={<h1><Royhat to={'./signin'}/></h1>} />
+    <Route path='/signin' element={<h1><Krish to={'./signup'}/></h1>} />
     </Routes>
-    {/* <Main/> */}
   </Container>
   )
 };

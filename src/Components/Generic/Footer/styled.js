@@ -28,7 +28,6 @@ flex-wrap: wrap;
 export const Div=styled.div`
 width: 140px;
 height: 200px;
-/* align-items: space-between; */
 `
 Div.D=styled.div`
 width: 360px;

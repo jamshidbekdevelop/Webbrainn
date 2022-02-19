@@ -2,9 +2,7 @@ import React from 'react';
 import { Cont, Container, Main, Text } from './styled';
 import Footer from '../Generic/Footer'
 import Kurslarimiz from '../Generic/Kurslarimiz'
-// import { useLocation } from 'react-router-dom';
 export const Kurslar = () => {
-    // const location = useLocation()
   return (
       <Main>
 

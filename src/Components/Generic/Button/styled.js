@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container =styled.div`
 display: flex;
+cursor: pointer;
 align-items: center;
 justify-content: center;
 min-width: 120px;
@@ -15,7 +16,6 @@ font-weight: 500;
 font-size: 18px;
 line-height: 26px;
 letter-spacing: 1px;
-/* filter: drop-shadow(4px 8px 16px rgba(0, 118, 245, 0.4)); */
 :active{
     transform: scale(0.97);
     color: white;

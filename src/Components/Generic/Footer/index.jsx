@@ -33,7 +33,7 @@ export const Footer = () => {
             <Textting big>Others</Textting>
             <Textting>Join our mailing list. We write rarely, but only the best content</Textting>
             <Input placeholder='Email manzikingiz'/>
-            <Button border width={355}>Yuborish</Button>
+            <a style={{'textDecoration': 'none'}} href="/signin"><Button border width={355}>Yuborish</Button></a>
           </Div.D>
         </Container>
       </Box>

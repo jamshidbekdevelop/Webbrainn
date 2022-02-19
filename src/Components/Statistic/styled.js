@@ -196,7 +196,7 @@ margin-left: 10px;
 export const Border=styled(border)`
 width: 141px;
 height: 55px;
-margin-left: 900px;
+margin-left: 600px;
 `
 export const Border1 =styled(border1)`
 width: 160px;

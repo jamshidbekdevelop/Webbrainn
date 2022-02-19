@@ -28,12 +28,9 @@ display: flex;
 justify-content: center;
 width: ${({bos})=>`${bos ? '342px' :'150px' }`};
 height: ${({bos})=>`${bos ? '200px' : '150px' }`};
-/* width: 150px;
-height: 150px; */
 border-radius: ${({bos})=>`${bos && '2px' }`};
 border-radius: 50%;
 background-color: yellow;
-/* border-radius: ${({ke})=> (ke && '50%')}; */
 `
 export const Text=styled.div`
 display: flex;
@@ -42,8 +39,6 @@ font-family: Inter;
 font-style: normal;
 font-weight: normal;
 text-align: center;
-/* margin-top: 20px; */
-/* align-items: center; */
 margin-bottom: ${({bog})=>`${bog && '20px'}`};
 font-size: ${({big})=>`${big? '22.5px': '14px'}`};
 line-height:${({big})=>`${big? '34px': '26px'}`};
