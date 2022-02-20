@@ -27,7 +27,7 @@ export const Royhat = () => {
           <Input pl type='checkbox'/>
           <Text.Ti>Hamma shartlarga rozilik bildiraman</Text.Ti>
         </Count>
-        <a style={{'textDecoration': 'none'}} href='/'><Button  border width={'auto'}>Tasdiqlash </Button></a>
+        <a style={{'textDecoration': 'none'}} href='./asosiy'><Button  border width={'auto'}>Tasdiqlash </Button></a>
         <Text.Ti kk>yoki ijtimoiy tarmoqlar orqali kiring</Text.Ti>
         <Count center><Face/><Goog/><Git/></Count>
         <Text.Ti>Hali ro’yxatdan o’tmaganmisiz? <a color={'#6C6660'} href="./signin"> Kirish</a></Text.Ti>

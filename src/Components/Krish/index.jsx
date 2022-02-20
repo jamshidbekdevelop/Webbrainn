@@ -28,7 +28,7 @@ export const Krish = () => {
             <a href="#">Parolni unutdinggizmi?</a>
           </Text.TT>
         </Count>
-        <Button  border width={'auto'}>Tasdiqlash</Button>
+        <a style={{'textDecoration': 'none'}} href="./tolov"><Button  border width={'auto'}>Tasdiqlash</Button></a>
         <Text.Ti kk>yoki ijtimoiy tarmoqlar orqali kiring</Text.Ti>
         <Count center><Face/><Goog/><Git/></Count>
         <Text.Ti>Hali ro’yxatdan o’tmaganmisiz? <a color={'#6C6660'} href="./signup"> Ro’yxatdan o’tish</a></Text.Ti>
