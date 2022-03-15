@@ -9,9 +9,9 @@ import web2 from '../assets/img/rab2.png'
 import web3 from '../assets/img/rab3.png'
 
 export const Kurs=[
-    {id:1, img: mob, title: 'Mobile Bootcamp', def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'},
-    {id:2, img: fro, title: 'Frontend Bootcamp', def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'},
-    {id:3, img: bac, title: 'Backend Bootcamp', def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'},
+    {id:1, img: mob, title: 'Mobile Bootcamp', def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'},
+    {id:2, img: fro, title: 'Frontend Bootcamp', def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'},
+    {id:3, img: bac, title: 'Backend Bootcamp', def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'},
 ]
 
 export const Bepul =[
@@ -32,7 +32,7 @@ export const Jamoa =[
         github: 'https://github.com/',
         title:'Sardor Muxtorov', 
         soha: 'Frontend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:2,
@@ -44,7 +44,7 @@ export const Jamoa =[
         github: 'https://github.com/',
         title:'Zohidjon Akbarov', 
         soha: 'Mobile Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:3,
@@ -56,7 +56,7 @@ export const Jamoa =[
         github: 'https://github.com/',
         title:'Hamza Kuranboyev', 
         soha: 'Backend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:4,
@@ -68,7 +68,7 @@ export const Jamoa =[
         github: 'https://github.com/',
         title:'Sardor Muxtorov', 
         soha: 'Frontend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
 ]
 
@@ -82,7 +82,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Sardor Muxtorov', 
         soha: 'Frontend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:2,
@@ -93,7 +93,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Zohidjon Akbarov', 
         soha: 'Mobile Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:3,
@@ -104,7 +104,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Hamza Kuranboyev', 
         soha: 'Backend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:4,
@@ -115,7 +115,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Sardor Muxtorov', 
         soha: 'Frontend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:5,
@@ -126,7 +126,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Zohidjon Akbarov', 
         soha: 'Mobile Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:6,
@@ -137,7 +137,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Hamza Kuranboyev', 
         soha: 'Backend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:7,
@@ -148,7 +148,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Sardor Muxtorov', 
         soha: 'Frontend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:8,
@@ -159,7 +159,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Zohidjon Akbarov', 
         soha: 'Mobile Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:9,
@@ -170,7 +170,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Hamza Kuranboyev', 
         soha: 'Backend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:10,
@@ -181,7 +181,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Sardor Muxtorov', 
         soha: 'Frontend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:11,
@@ -192,7 +192,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Zohidjon Akbarov', 
         soha: 'Mobile Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
     {
         id:12,
@@ -203,7 +203,7 @@ export const natijalar =[
         github: 'https://github.com/',
         title:'Hamza Kuranboyev', 
         soha: 'Backend Dasturchi', 
-        def: 'Consectetur adipiscing elit. Potenti in cras etiam nunc. Et diam augue turpis curabitur et vitae at et, sit. Purus, vel vel nulla faucibus.'
+        def: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.'
     },
 ]
 export default natijalar;

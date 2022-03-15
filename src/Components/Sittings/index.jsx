@@ -12,7 +12,6 @@ export const Setting = () => {
         setOffOn(!offOn)
     }
     const [{openState}, dispatch]=useConnectionsContext()
-    console.log(openState, 'ps');
     const onClose=()=>{
       dispatch({
         type: 'ChangePage', payload: !openState
