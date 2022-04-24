@@ -86,5 +86,4 @@ export const Soha = styled.h2`
   font-size: 17.5px;
   line-height: 28px;
   color: var(--colorBlue);
-  /* margin-top: 10px; */
 `;

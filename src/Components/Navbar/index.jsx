@@ -7,7 +7,6 @@ import Button from "../Generic/Button";
 import Setting from "../Sittings";
 export const Navbar = () => {
   const location = useLocation();
-  // const active={value.toString()}
   return (
     <React.Fragment>
       <Container>
@@ -17,7 +16,7 @@ export const Navbar = () => {
             ({ id, pathname, title, hidden }) =>
               !hidden && (
                 <Link
-                  active={(location?.pathname === pathname)}
+                  active={`${(location?.pathname === pathname)}`}
                   key={id}
                   to={pathname}
                 >
