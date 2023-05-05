@@ -5,9 +5,6 @@ import { ReactComponent as fasebook } from "../../assets/assets/facebook.svg";
 import { ReactComponent as instagram } from "../../assets/assets/intagram.svg";
 import { ReactComponent as youtube } from "../../assets/assets/youtube.svg";
 import { ReactComponent as githab } from "../../assets/assets/github.svg";
-import { ReactComponent as border } from "../../assets/assets/border2.svg";
-import { ReactComponent as border1 } from "../../assets/assets/border3.svg";
-import { ReactComponent as border2 } from "../../assets/assets/border4.svg";
 import { ReactComponent as border3 } from "../../assets/assets/border5.svg";
 import { ReactComponent as border4 } from "../../assets/assets/border6.svg";
 
@@ -209,21 +206,6 @@ export const Sertifikat = styled.img.attrs({
   }
 
 `;
-export const Border = styled(border)`
-  width: 141px;
-  height: 55px;
-  margin-left: 600px;
-`;
-export const Border1 = styled(border1)`
-  width: 160px;
-  height: 68px;
-  margin-top: 80px;
-`;
-export const Border2 = styled(border2)`
-  margin-top: 15px;
-  width: 180px;
-  height: 46px;
-`;
 export const Border3 = styled(border3)`
   margin-top: 25px;
   width: 180px;
@@ -232,33 +214,6 @@ export const Border3 = styled(border3)`
 export const Border4 = styled(border4)`
   width: 160px;
   height: 68px;
-`;
-export const Texting = styled.div`
-  margin-left: 40px;
-  margin-top: 20px;
-  width: 294px;
-  height: 78px;
-  font-family: Chilanka;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
-  color: var(--colorBlack);
-`;
-export const TExt = styled.div`
-  margin-top: 20px;
-  margin-left: 10px;
-  width: 250px;
-  height: 78px;
-  margin-top: ${({ top }) => `${top && "0px"}`};
-  font-family: Chilanka;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
-  color: var(--colorBlack);
 `;
 Text.Tex = styled.div`
   margin-top: 50px;

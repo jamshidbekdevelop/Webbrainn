@@ -17,13 +17,6 @@ import {
   Instagram,
   Github,
   Sertifikat,
-  Texting,
-  Border,
-  TExt,
-  Border1,
-  Border2,
-  Border3,
-  Border4,
   Body,
   Image,
 } from "./styled";

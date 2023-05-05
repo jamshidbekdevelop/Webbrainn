@@ -1,9 +1,7 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 import Button from '../Generic/Button';
 import { Basic, Container, Count, Div, Face, Git, Goog, Input, Text, Title } from './styled';
 export const Krish = () => {
-    const location = useLocation()
   return(
     <React.Fragment>
       <Basic>
@@ -24,7 +22,7 @@ export const Krish = () => {
           <Input pl type='checkbox'/>
           <Text.Ti>Karta ma’lumotlarini eslab qolish</Text.Ti>
           <Text.TT>
-            <a href="#">Parolni unutdinggizmi?</a>
+            <a href="./tolov">Parolni unutdinggizmi?</a>
           </Text.TT>
         </Count>
         <a style={{'textDecoration': 'none'}} href="./tolov"><Button  border width={'auto'}>Tasdiqlash</Button></a>

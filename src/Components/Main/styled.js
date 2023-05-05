@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ReactComponent as border } from "../../assets/assets/border.svg";
 
 export const Body = styled.div`
   width: 100%;
@@ -79,29 +78,6 @@ export const Buton = styled.div`
   gap: 24px;
   @media screen and (max-width: 500px) {
     justify-content: space-around;
-  }
-`;
-
-export const Border = styled(border)`
-  width: 135px;
-  height: 200px;
-  margin-top: 20px;
-`;
-export const Text = styled.div`
-  margin-left: 240px;
-  margin-top: -100px;
-  width: 270px;
-  height: 178px;
-  font-family: Chilanka;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
-  color: var(--colorBlack);
-  @media screen and (max-width: 750px) {
-    width: 160px;
-    height: 500px;
   }
 `;
 

@@ -13,14 +13,11 @@ import {
   Humo,
   In,
   Input,
-  Nav,
   Text,
   TiT,
   TiTTle,
   Tolov,
   TT,
-  Uzcar,
-  Uzcard,
   Visa,
 } from "./styled";
 
@@ -28,7 +25,7 @@ export const Tolovlar = () => {
   return (
     <React.Fragment>
       <Contt>
-          <Navbar />
+        <Navbar />
         <Div>
           <React.Fragment>
             <Text>To`lovlar</Text>
@@ -66,7 +63,6 @@ export const Tolovlar = () => {
               <Input type={"radio"} />
               <TT>Mahalliy to’lov tizimlari</TT>
               <Humo />
-              <Uzcar />
             </Border>
             <Border>
               <Input type={"radio"} />

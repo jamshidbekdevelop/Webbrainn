@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { ReactComponent as humo } from "../../assets/assets/humo.svg";
 import { ReactComponent as crav } from "../../assets/assets/crav.svg";
 import { ReactComponent as visa } from "../../assets/assets/visa.svg";
-import { ReactComponent as Uzcard } from "../../assets/assets/uzcard.svg";
 export const Contt = styled.div`
   width: 100%;
   height: auto;
@@ -70,10 +69,6 @@ export const Humo = styled(humo)`
   height: 30px;
 `;
 export const Crav = styled(crav)``;
-export const Uzcar = styled(Uzcard)`
-  width: 48px;
-  height: 30px;
-`;
 export const Visa = styled(visa)`
   margin-left: 45px;
   width: 50px;
