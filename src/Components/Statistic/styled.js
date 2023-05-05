@@ -13,9 +13,11 @@ import { ReactComponent as border4 } from "../../assets/assets/border6.svg";
 
 export const Body = styled.div`
   margin: auto;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  width: 78%;
+  max-width: 1520px;
+  width: 100%;
 `;
 
 export const Container = styled.div`
@@ -32,6 +34,7 @@ export const Container = styled.div`
   justify-content: ${({ jcb }) => `${jcb && "space-between"}`};
   align-items: ${({ ai }) => `${ai && "center"}`};
   position: relative;
+  max-width: ${({ mw }) => (mw ? `${mw}px` : "auto")};
 `;
 export const St = styled.div`
   display: flex;
@@ -47,12 +50,12 @@ export const St = styled.div`
 `;
 export const Div = styled.div`
   margin-left: ${({ topp }) => `${topp && "90px"}`};
-  height: auto !important;
-  height: ${({ height }) => `${height ? "height px" : "246px"}`};
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   justify-content: ${({ center }) => `${center ? "center" : "space-between"}`};
   flex-wrap: wrap;
+  gap: 30px;
 `;
 
 Div.K = styled.div`
@@ -83,12 +86,17 @@ export const Box = styled.div`
   background: #f5faff;
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  width: 354px;
-  height: 246px;
+  min-height: 199px;
+  min-width: 157px;
+  max-width: 354px;
+  max-height: 246px;
+  width: 100%;
 `;
 export const Icon = styled.div`
-  width: 60px;
-  height: 66px;
+  min-height: 40px;
+  min-width: 40px;
+  max-width: 60px;
+  max-height: 66px;
 `;
 export const Size = styled.div`
   color: var(--colorBlack);
@@ -114,11 +122,20 @@ export const Img = styled.div`
   height: 550px;
   box-shadow: 8px 8px 30px 10px #c4c4c4;
   border-radius: 30px;
+  @media screen and (max-width: 550px) {
+    width: 170px;
+    border-radius: 15px;
+
+    height: 260px;
+  }
 `;
 export const Image = styled.img`
   border-radius: 30px;
   width: 100%;
   height: 100%;
+  @media screen and (max-width: 550px) {
+    border-radius: 15px;
+  }
 `;
 export const Text = styled.div`
   display: flex;
@@ -182,6 +199,15 @@ export const Sertifikat = styled.img.attrs({
   min-height: 350px;
   height: 524px;
   margin-left: 10px;
+  @media screen and (max-width: 650px) {
+    min-width: 370px;
+    height:500px;
+    width:100%;
+  }
+  @media screen and (max-width: 650px) {
+    height:400px;
+  }
+
 `;
 export const Border = styled(border)`
   width: 141px;

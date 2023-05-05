@@ -8,9 +8,10 @@ display: flex;
 width: 100%;
 gap: ${({fex})=> `${fex && '5px'}`};
 margin-top: ${({fex})=> `${fex && '20px'}`};
-height: ${({fex})=>`${fex ? '0px' : '400px'}`};
+height: ${({fex})=>`${fex ? '0px' : 'fit-content'}`};
 padding-top: ${({fex})=>`${fex ? '0px' : '120px'}`};
 justify-content: center;
+
 `
 export const Cont =styled.div`
 width: 100%;
@@ -37,6 +38,10 @@ text-align: center;
 font-size: ${({big})=>`${big? '22.5px': '14px'}`};
 line-height:${({big})=>`${big? '34px': '26px'}`};
 color: var(--colorBlack);
+@media screen and (max-width: 650px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 `
 export const Text =styled.span`
 font-family: Fira Code;
@@ -47,6 +52,10 @@ font-size: 4.4vw;
 line-height: 88px;
 letter-spacing: -0.08em;
 color: ${({blue})=>`var(${blue? '--colorBlue': '--colorBlack'})`};
+@media screen and (max-width: 650px) {
+    font-size: 40px;
+    line-height: 60px;
+  }
 `
 export const Facebook = styled(fasebook)`
 
@@ -76,6 +85,10 @@ font-size: ${({big})=>`${big? '17px': '1.12vw'}`};
 height: auto;
 line-height: 28px;
 color: var(--colorBlack);
+@media screen and (max-width: 650px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 `
 export const Main =styled.div`
 display: flex;
@@ -95,6 +108,12 @@ background: #F5FAFF;
 margin-bottom: 32px;
 box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
 border-radius: 10px;
+@media screen and (max-width: 650px) {
+min-width: 370px;
+
+    display: flex;
+    flex-direction: column;
+  }
 `
 export const Div=styled.div`
 display: flex;

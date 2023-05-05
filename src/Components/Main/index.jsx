@@ -1,5 +1,4 @@
 import React from "react";
-import { useConnectionsContext } from "../../Context";
 import Button from "../Generic/Button";
 import Statistic from "../Statistic";
 import img1 from "../../assets/img/c.png";
@@ -14,8 +13,6 @@ import {
   Border,
   Buton,
   Container,
-  D,
-  Div,
   IMg,
   Text,
   Left,
@@ -24,7 +21,6 @@ import {
   A,
 } from "./styled";
 export const Main = () => {
-  const [{ openState }] = useConnectionsContext();
   return (
     <Body>
       <Basic>
@@ -34,25 +30,17 @@ export const Main = () => {
             beruvchi <Blue>markaz</Blue>
             <Buttons>
               <Buton>
-                <A href={"kurslarimiz"}>
-                  <Button width={"230"} border>
-                    Kurslarimiz
+                  <A href={"kurslarimiz"}>
+                    <Button width={230} border>
+                      Kurslarimiz
+                    </Button>
+                  </A>
+                  <Button width={230} border>
+                    Aloqa
                   </Button>
-                </A>
-                <Button width={"230"} border>
-                  Aloqa
-                </Button>
               </Buton>
-              <div>{openState === true && <Border />}</div>
+              {/* <div>{openState === true && <Border />}</div> */}
             </Buttons>
-            <div>
-              {openState === true && (
-                <Text>
-                  siz vapshe hech narsa bilmasangizam o’qito’ramiz (sizam
-                  vruchat qvorarsiz )
-                </Text>
-              )}
-            </div>
           </Container>
         </Left>
         <Right>

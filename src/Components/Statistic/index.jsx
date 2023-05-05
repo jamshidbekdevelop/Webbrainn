@@ -30,13 +30,11 @@ import {
 import { Static } from "../../utils/static";
 import { Bepul, Jamoa } from "../../utils/kurslar";
 import Button from "../Generic/Button";
-import { useConnectionsContext } from "../../Context";
 import b from "../../assets/img/b1.png";
 import b1 from "../../assets/img/b2.png";
 import Footer from "../Generic/Footer";
 import Kurslarimiz from "../Generic/Kurslarimiz";
 export const Statistic = () => {
-  const [{ openState }] = useConnectionsContext();
 
   return (
     <React.Fragment>
@@ -53,14 +51,6 @@ export const Statistic = () => {
             </Box>
           ))}
         </Div>
-        {openState == true && (
-          <Div height={"30"} center>
-            <Border />
-            <Texting>
-              85 % bitiruvchilar hozir ishlashyapti, sizda nima gaplar
-            </Texting>
-          </Div>
-        )}
         <St top={120}>Biz Haqimizda</St>
         <Container flex gap={70} fw ai>
           <Container flex gap={30}>
@@ -71,16 +61,7 @@ export const Statistic = () => {
               <Image src={b1} />
             </Img>
           </Container>
-          <Container width={"450"} height={"256"}>
-            {openState == true && (
-              <Div.K>
-                <Border1 />
-                <TExt>
-                  bizi yomonlashsa ishanmanglar, kelib ko’ringlar balki undanam
-                  yomondirmiz
-                </TExt>
-              </Div.K>
-            )}
+          <Container mw={"450"} height={"256"}>
             <Text big> Biz haqimizda faqat bizdan eshiting</Text>
             <Text>
               Eget nam quisque lobortis ipsum sollicitudin. Ultricies morbi
@@ -95,27 +76,7 @@ export const Statistic = () => {
             </Text>
           </Container>
         </Container>
-        <St top={90}>
-          Kurslar
-          {openState == true && (
-            <Div.L>
-              <Border2 />
-              <TExt top>bu dollarni kursimas, o’quv kursi. (10820 )</TExt>
-            </Div.L>
-          )}
-        </St>
         <Kurslarimiz />
-        <St top={120}>
-          Bepul darslar
-          {openState == true && (
-            <Div.L>
-              <Border2 />
-              <TExt top>
-                to’g’ri o’qidiz, tep-tekin kursalarimizam bor yesli cho’
-              </TExt>
-            </Div.L>
-          )}
-        </St>
 
         <Container flex fw ai jcb>
           {Bepul.map(({ id, img, title, def }) => (
@@ -133,15 +94,6 @@ export const Statistic = () => {
         </Container>
         <St top={90}>
           Bizning Jamoa
-          {openState == true && (
-            <Div.L>
-              <Border3 />
-              <TExt top>
-                bizning markaz gigantlari, agar ishanmaselar tizza bo’yi suvda
-                turaslar aytippoye
-              </TExt>
-            </Div.L>
-          )}
         </St>
         <Container flex fw ai jcb>
           {Jamoa.map(
@@ -182,26 +134,16 @@ export const Statistic = () => {
           )}
         </Container>
         <St topp>Sertifikat</St>
-        <Container flex>
+         <Container flex fw>
           <Sertifikat />
-          <Container width={450} height={256} flex column mt={160} ml={100}>
+          <Container mw={450} height={256} flex column mt={160} ml={100}>
             <Text big>+200 o’quvchilar bizga ishonishgan</Text>
             <Text bog>
               Kursni tamomlagan talabalarning o’zlashtirish ko’rsatkichi
               e’tiborga olingan holda sertifikatlar beriladi.
             </Text>
-            {openState === true && (
-              <Div.S>
-                <Border4 />
-                <Text.Tex>
-                  bu joyda ko’proq jumla bo’lishi mumkin edi...
-                  <br />
-                  meni tushundinggiz deb o’ylayman. Tugadi
-                </Text.Tex>
-              </Div.S>
-            )}
           </Container>
-        </Container>
+        </Container> 
       </Body>
       <Footer />
     </React.Fragment>

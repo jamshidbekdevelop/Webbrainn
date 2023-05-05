@@ -6,7 +6,7 @@ export const Main = styled.div`
   align-items: center;
 `;
 Main.M = styled.div`
-  width: 78%;
+  width: 100%;
 `;
 export const Container = styled.div`
   display: flex;
@@ -30,4 +30,8 @@ export const Text = styled.span`
   letter-spacing: -0.08em;
   margin-left: ${({ margin }) => `${margin && "100px"}`};
   color: ${({ blue }) => `var(${blue ? "--colorBlue" : "--colorBlack"})`};
+  @media screen and (max-width: 650px) {
+    font-size: 40px;
+    line-height: 60px;
+  }
 `;

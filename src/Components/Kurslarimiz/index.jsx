@@ -9,7 +9,7 @@ export const Kurslar = () => {
         <Container>
           <Text>
             <Text margin blue>
-              Webbrain{" "}
+              Webbrain{' '}
             </Text>
             akademiyasi tomonidan taklif etilayotgan
             <Text blue> kurslar ro’yxati</Text>

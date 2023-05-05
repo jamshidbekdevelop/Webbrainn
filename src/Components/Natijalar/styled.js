@@ -19,6 +19,7 @@ export const Container = styled.div`
   height: ${({ fex }) => `${fex ? "0px" : "400px"}`};
   padding-top: ${({ fex }) => `${fex ? "0px" : "120px"}`};
   justify-content: center;
+  height: fit-content;
 `;
 export const Cont = styled.div`
   display: flex;
@@ -55,6 +56,7 @@ export const TexT = styled.div`
   font-size: ${({ big }) => `${big ? "22.5px" : "14px"}`};
   line-height: ${({ big }) => `${big ? "34px" : "26px"}`};
   color: var(--colorBlack);
+
 `;
 export const Text = styled.span`
   font-family: Fira Code;
@@ -65,6 +67,10 @@ export const Text = styled.span`
   line-height: 88px;
   letter-spacing: -0.08em;
   color: ${({ blue }) => `var(${blue ? "--colorBlue" : "--colorBlack"})`};
+  @media screen and (max-width: 650px) {
+    font-size: 40px;
+    line-height: 60px;
+  }
 `;
 export const Facebook = styled(fasebook)``;
 export const Instagram = styled(instagram)``;

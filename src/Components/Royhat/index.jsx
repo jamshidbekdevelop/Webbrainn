@@ -1,5 +1,4 @@
 import React from "react";
-import Setting from "../Sittings";
 import Button from "../Generic/Button";
 import {
   Basic,
@@ -56,7 +55,6 @@ export const Royhat = () => {
           </Text.Ti>
         </Div>
       </Basic>
-      <Setting />
     </React.Fragment>
   );
 };

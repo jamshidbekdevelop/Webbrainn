@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import Setting from '../Sittings';
 import Button from '../Generic/Button';
 import { Basic, Container, Count, Div, Face, Git, Goog, Input, Text, Title } from './styled';
 export const Krish = () => {
@@ -34,7 +33,6 @@ export const Krish = () => {
         <Text.Ti>Hali ro’yxatdan o’tmaganmisiz? <a color={'#6C6660'} href="./signup"> Ro’yxatdan o’tish</a></Text.Ti>
       </Div>
       </Basic>
-        <Setting/>
     </React.Fragment>
   )  
 };
